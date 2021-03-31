@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //将函数作为值返回
+
+    function test1()
+    {
+        function test2(a,b){
+            console.log(1111)
+            console.log(a+b)
+        }
+        return test2
+    }
+
+
+    test1()(11,22)
+
+
+</script>
+
+</body>
+</html>
